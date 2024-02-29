@@ -129,22 +129,61 @@
 #
 # WORKING WITH NUMBERS AND CONVERTING
 
-from math import ceil, floor
+# from math import ceil, floor
 
-first_planet_input = input("Enter the distance from the sun for the first planet in km\n")
-second_planet_input = input("Enter the distance from the sun for the second planet in km\n")
+# first_planet_input = input("Enter the distance from the sun for the first planet in km\n")
+# second_planet_input = input("Enter the distance from the sun for the second planet in km\n")
 
-# converting from string to int
+# # converting from string to int
 
-first_planet = float(first_planet_input)
-second_planet = float(second_planet_input)
+# first_planet = float(first_planet_input)
+# second_planet = float(second_planet_input)
 
-# calculation
+# # calculation
 
-distance_km = (second_planet - first_planet)
-print('Distance = ' + str(ceil(distance_km)))
-print('Distance_float = ' + str(distance_km))
+# distance_km = (second_planet - first_planet)
+# print('Distance = ' + str(ceil(distance_km)))
+# print('Distance_float = ' + str(distance_km))
 
 # -----------------------------------------------------------------
 
+# WORKING WITH PYTHON LISTS
+
+
+# planets = ['Mercury', 'Earth', 'Venus', 'Mars', 'Saturn', 'Uranus', 'Neptune', 'Jupiter']
+
+# print('First planet on the list is: ' + planets[0])
+# print('Second planet on the list is: ' + planets[1])
+# print('Third planet on the list is: ' + planets[2])
+
+# planets[1] = 'Tierra'
+# print(planets)
+
+# # Lenght of a list
+# number_of_planets = len(planets)
+# print('Number of planets: ' + str(number_of_planets))
+
+# # Append to list .append(value)
+
+# planets.append('New Planet')
+# new_number_of_planets = len(planets)
+# print("New number of planets: ", new_number_of_planets)
+
+# # finding a value in a list (jupiter)
+# planets_loweredCase = [x.lower() for x in planets]
+# jupiter_find_index = planets_loweredCase.index('jupiter')
+# print('Jupiter is the ', jupiter_find_index + 1, 'planet from the sun')
+
+# --------------------------------------------------------------
+
+# More numbers exercise
+# gravity_on_planets = [0.378, 0.907, 1, 0.377, 2.36, 0.916, 0.889, 1.12]
+# bus_weight = 124054
+
+# print('On Earth, a double-checker bus weighs', bus_weight, 'N')
+# print('On Mars, a double-decker bus weighs ', bus_weight*gravity_on_planets[1], 'N')
+# print('The lightest a bus would be in solar system is ', bus_weight * min(gravity_on_planets), 'N')
+# print('The heaviest a bus would be in solar system is ', bus_weight * max(gravity_on_planets), 'N')
+
+# --------------------------------------------------------------
 
