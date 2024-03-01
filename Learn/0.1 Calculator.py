@@ -8,6 +8,6 @@ while True:
         result = first_number + second_number
         print("THE SUM OF THE TWO NUMBERS PROVIDED = " + str(result))
         break 
-    else :{
-    print("YOU MUST INDICATE THE TYPE OF OPERATION\n")      
-    }
+    else :
+        print("YOU MUST INDICATE THE TYPE OF OPERATION\n")      
+    
