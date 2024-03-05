@@ -21,6 +21,6 @@ print(rainfall)
 print('\n')
 
 if 'may' in rainfall:
-    rainfall['may'] = rainfall['may'] + 156.9/3
+    rainfall['may'] = round(rainfall['may'] + 156.9/3, 2)
 
 print(rainfall)
