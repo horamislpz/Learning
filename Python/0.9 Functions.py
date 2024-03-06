@@ -47,7 +47,6 @@
     
 from turtle import distance, speed
 
-
 planets = {
     'Moon':     238855.00,
     'Mercury': 	35980000.00,
