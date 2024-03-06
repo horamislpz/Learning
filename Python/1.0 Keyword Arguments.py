@@ -57,4 +57,29 @@ def sequence_time(*arg):
     else:
         return f"Total time to launch is {round(total_minutes/60, 3)} hours"
 output = sequence_time(40, 40, 50, 40, 50)
-print(output)
+#print(output)
+
+                #--------- Variable Keyword Arguments --------- #-
+        #For keyword arguments its need double ** in the function
+        
+def variable_length(**args):
+    return args
+variable = variable_length(tanks=1, day="Wednesday", pilots=3)
+
+for values in variable:
+    values_01 = variable.get(values)
+    # print(values_01)
+    
+    #Exercise
+    
+def crew_member(**kwargs):
+    print(f"{len(kwargs)} astronauts assigned for this mission")
+                #^To determine how many arguments
+    for tittle, name in kwargs.items():
+        print(f"{tittle}: {name}")
+
+crew_member(Captain="Neil Armstrong", 
+            Pilot="Buzz Aldrin",
+            Command_Pilot="Michael Collins"
+            )
+
