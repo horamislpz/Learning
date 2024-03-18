@@ -8,3 +8,4 @@ def send_mail (num_visits, visits_email, visit_coupon):
         print("Send Email.")
         
 send_mail(num_visits=6,visits_email=3, visit_coupon=2)
+
